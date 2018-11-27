@@ -1,0 +1,33 @@
+{
+  "name": "movie-crud-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify -d main.js -o bundle.js",
+    "watch": "watchify -d main.js -o bundle.js",
+    "dev-server": "live-server .",
+    "dev": "run-all \"npm run watch\" \"npm run dev-server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahselee223/movie-crud-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarahselee223/movie-crud-frontend/issues"
+  },
+  "homepage": "https://github.com/sarahselee223/movie-crud-frontend#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "browserfy": "^1.0.0",
+    "cors": "^2.8.5",
+    "live-server": "^1.2.1",
+    "watchify": "^3.11.0"
+  },
+  "devDependencies": {
+    "run-all": "^1.0.1",
+    "surge": "^0.20.1"
+  }
+}
